@@ -7,10 +7,8 @@
  </defs>
  <g class="layer">
   <title>Layer 1</title>
-  <g clip-path="url(#clip0_204_118)" id="svg_2">
-   <path d="m0,14.58c0,-6.22 3.84,-11.83 9.88,-13.32c10.11,-2.48 25.36,-4.52 32.87,2.99c6.34,6.34 5.87,18.2 4.08,27.82c-1.71,9.17 -10.24,14.93 -19.58,14.93l-19.75,0c-4.14,0 -7.5,-3.36 -7.5,-7.5l0,-24.92z" fill="#FE705A" id="svg_3"/>
-   <text fill="#ffff00" font-family="Cursive" font-size="30" id="svg_6" stroke-width="0" style="cursor: move;" text-anchor="middle" transform="matrix(1 0 0 1 0 0) matrix(0.998417 -0.0562483 0.0562483 0.998417 -1.02674 0.874681)" x="12.47" xml:space="preserve" y="28.78">H</text>
-   <text fill="#000000" font-family="Cursive" font-size="30" id="svg_7" stroke-width="0" style="cursor: move;" text-anchor="middle" transform="matrix(0.994888 -0.100984 0.100984 0.994888 -1.91657 3.24715)" x="31.34" xml:space="preserve" y="37.52">M</text>
-  </g>
+  <path d="m0,14.58c0,-6.22 3.84,-11.83 9.88,-13.32c10.11,-2.48 25.36,-4.52 32.87,2.99c6.34,6.34 5.87,18.2 4.08,27.82c-1.71,9.17 -10.24,14.93 -19.58,14.93l-19.75,0c-4.14,0 -7.5,-3.36 -7.5,-7.5l0,-24.92z" fill="#3b82f6" id="svg_3"/>
+  <text fill="#ffff00" font-family="Cursive" font-size="30" id="svg_6" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1 0 0) matrix(0.998417 -0.0562483 0.0562483 0.998417 -1.02674 0.874681)" x="12.47" xml:space="preserve" y="28.78">H</text>
+  <text fill="#000000" font-family="Cursive" font-size="30" id="svg_7" stroke-width="0" text-anchor="middle" transform="matrix(0.994888 -0.100984 0.100984 0.994888 -1.91657 3.24715)" x="31.34" xml:space="preserve" y="37.52">M</text>
  </g>
 </svg>
