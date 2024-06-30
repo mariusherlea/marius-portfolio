@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="h1 mb-4">Hello, my name is Marius Herlea</h1>
+            <h1 className="h1 mb-4">Hello, my name is Herlea Marius</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               Brief description with insights into myself, my vocational
               journey, and what I engage in professionally.
