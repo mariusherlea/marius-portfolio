@@ -5,15 +5,15 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "/",
+    path: "https://www.youtube.com/@travelbycoordinates7814",
     name: <RiYoutubeFill />,
   },
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/mariusherlea/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/mariusherlea",
     name: <RiGithubFill />,
   },
 ];
