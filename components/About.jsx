@@ -90,7 +90,6 @@ const skillData = [
       { imgPath: "/about/vscode.svg" },
       { imgPath: "/about/figma.svg" },
       { imgPath: "/about/notion.svg" },
-      { imgPath: "/about/vscode.svg" },
     ],
   },
 ];
@@ -112,7 +111,7 @@ const About = () => {
             <DevImg
               containerStyles="dark:bg-about_shape_dark 
               w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc={"/hero/developer.png"}
+              imgSrc={"/about/developer.png"}
             />
           </div>
           {/*tabs*/}
@@ -174,9 +173,9 @@ const About = () => {
                     {/** experience and education wraper*/}
                     <div className="grid md:grid-cols-2 gap-y-8">
                       {/** experience*/}
-                      <div>
+                      <div className="flex flex-col gap-y-6">
                         <div className="flex items-center gap-x-4 text-[22px] text-primary">
-                          <Briefcase />
+                          <Briefcase size={28} />
                           <h4 className="capitalize font-medium">
                             {getData(qualificationsData, "experience").title}
                           </h4>
@@ -206,9 +205,9 @@ const About = () => {
                         </div>
                       </div>
                       {/** education*/}
-                      <div>
+                      <div className="flex flex-col gap-y-6">
                         <div className="flex items-center gap-x-4 text-[22px] text-primary">
-                          <GraduationCap />
+                          <GraduationCap size={28} />
                           <h4 className="capitalize font-medium">
                             {getData(qualificationsData, "education").title}
                           </h4>
@@ -240,7 +239,50 @@ const About = () => {
                     </div>
                   </div>
                 </TabsContent>
-                <TabsContent value="skills">skills info</TabsContent>
+                {/** skills*/}
+                <TabsContent value="skills">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">What I Use Everyday</h3>
+                    <div className="mb-16">
+                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                      <div className="border-b border-border mb-4"></div>
+                      {/** skills list*/}
+                      <div>
+                        {getData(skillData, "skills").data.map(
+                          (item, index) => (
+                            <div
+                              className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                              key={index}
+                            >
+                              <div className="font-medium">{item.name}</div>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    </div>
+                    {/** tools*/}
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                        Tools
+                      </h4>
+                      <div className="border-b border-border mb-4"></div>
+                      {/** tools list*/}
+                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                        {getData(skillData, "tools").data.map((item, index) => (
+                          <div key={index}>
+                            <Image
+                              src={item.imgPath}
+                              alt="ceva"
+                              width={48}
+                              height={48}
+                              priority
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
               </div>
             </Tabs>
           </div>
