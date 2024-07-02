@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Card, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
-import { Link2Icon, LucideGitBranchPlus } from "lucide-react";
+import { Link2Icon, Github } from "lucide-react";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
               className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
               href={project.github}
             >
-              <LucideGitBranchPlus />
+              <Github />
             </Link>
           </div>
         </div>
