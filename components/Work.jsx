@@ -23,8 +23,7 @@ const projectData = [
     image: "/work/4.png",
     category: "react js",
     name: "Ceva Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
     github: "/",
   },
@@ -32,8 +31,7 @@ const projectData = [
     image: "/work/3.png",
     category: "next js",
     name: "Altcdeva Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.  ",
     link: "/",
     github: "/",
   },
@@ -41,8 +39,7 @@ const projectData = [
     image: "/work/2.png",
     category: "vanilla js",
     name: "Si mai Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
     github: "/",
   },
@@ -50,8 +47,7 @@ const projectData = [
     image: "/work/1.png",
     category: "html css",
     name: "Vai viata lui Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     link: "/",
     github: "/",
   },
@@ -59,8 +55,7 @@ const projectData = [
     image: "/work/4.png",
     category: "react js",
     name: "Ceva Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
     github: "/",
   },
@@ -68,8 +63,7 @@ const projectData = [
     image: "/work/3.png",
     category: "next js",
     name: "Altcdeva Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     link: "/",
     github: "/",
   },
@@ -77,8 +71,7 @@ const projectData = [
     image: "/work/2.png",
     category: "vanilla js",
     name: "Si mai Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     link: "/",
     github: "/",
   },
@@ -86,8 +79,7 @@ const projectData = [
     image: "/work/1.png",
     category: "html css",
     name: "Vai viata lui Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore. Ea libero eaque nesciunt doloribus voluptates possimus enim accusamus dolorum corrupti atque dicta veniam hic, ipsum voluptatem, ab totam illum",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     link: "/",
     github: "/",
   },
@@ -121,7 +113,7 @@ const Work = () => {
             pagination={{ clickable: true }}
           >
             {/** show only the firs 4 projects for the slides */}
-            {projectData.slice(0.4).map((project, index) => (
+            {projectData.slice(0, 4).map((project, index) => (
               <SwiperSlide key={index}>
                 <ProjectCard project={project} />
               </SwiperSlide>

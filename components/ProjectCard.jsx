@@ -1,8 +1,8 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Card, CardHeader } from "./ui/card";
-import { RiGithubFill, RiLinkUnlink } from "react-icons/ri";
 import { Badge } from "./ui/badge";
+import Link from "next/link";
+import { Link2Icon, LucideGitBranchPlus } from "lucide-react";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -18,6 +18,21 @@ const ProjectCard = ({ project }) => {
             height={250}
             priority
           />
+          {/**buttons*/}
+          <div className="flex gap-x-4">
+            <Link
+              className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+              href={project.link}
+            >
+              <Link2Icon />
+            </Link>
+            <Link
+              className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+              href={project.github}
+            >
+              <LucideGitBranchPlus />
+            </Link>
+          </div>
         </div>
       </CardHeader>
       <div className="h-full px-8 py-6">
@@ -25,7 +40,7 @@ const ProjectCard = ({ project }) => {
           {project.category}
         </Badge>
         <h4 className="h4 mb-1">{project.name}</h4>
-        <p className="text-muted-foreground text-lg">{project.description}</p>
+        <p className="text-muted-foreground text-sm">{project.description}</p>
       </div>
     </Card>
   );
