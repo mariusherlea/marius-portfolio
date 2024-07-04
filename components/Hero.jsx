@@ -34,10 +34,12 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV
-                <Download size={18} />
-              </Button>
+              <a href="/cv.pdf">
+                <Button variant="secondary" className="gap-x-2">
+                  CV
+                  <Download size={18} />
+                </Button>
+              </a>
             </div>
             {/** socials*/}
             <Socials

@@ -8,42 +8,42 @@ const reviewsData = [
     name: "Richard Thompson",
     job: "Chef",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora.",
   },
   {
     avatar: "/reviews/avatar-2.png",
     name: "Evelyn Anderson",
     job: "Interior Designer",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex .",
   },
   {
     avatar: "/reviews/avatar-3.png",
     name: "John Smith",
     job: "Game Developer",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt .",
   },
   {
     avatar: "/reviews/avatar-4.png",
     name: "Emily Williams",
     job: "Therapist",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt.",
   },
   {
     avatar: "/reviews/avatar-5.png",
     name: "Oliver Jones",
     job: "Engineer",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex.",
   },
   {
     avatar: "/reviews/avatar-6.png",
     name: "Mason Brown",
     job: "Video Editor",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod dol.",
   },
 ];
 
