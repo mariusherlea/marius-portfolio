@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { useReviews } from "@/dataProvider/ReviewData";
 
 //import swiper react component
 
@@ -15,52 +16,8 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-const reviewsData = [
-  {
-    avatar: "/reviews/avatar-1.png",
-    name: "Richard Thompson",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
-  },
-  {
-    avatar: "/reviews/avatar-2.png",
-    name: "Evelyn Anderson",
-    job: "Interior Designer",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
-  },
-  {
-    avatar: "/reviews/avatar-3.png",
-    name: "John Smith",
-    job: "Game Developer",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
-  },
-  {
-    avatar: "/reviews/avatar-4.png",
-    name: "Emily Williams",
-    job: "Therapist",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
-  },
-  {
-    avatar: "/reviews/avatar-5.png",
-    name: "Oliver Jones",
-    job: "Engineer",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
-  },
-  {
-    avatar: "/reviews/avatar-6.png",
-    name: "Mason Brown",
-    job: "Video Editor",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt aspernatur debitis magnam, mollitia, adipisci, nisi eos iusto accusantium.",
-  },
-];
-
 const Reviews = () => {
+  const reviewsData = useReviews();
   return (
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto ">
