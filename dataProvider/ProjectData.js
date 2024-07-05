@@ -10,8 +10,8 @@ const projectData = [
     name: "Portfolio Website",
     description:
       "Website built with Next.js, Tailwind CSS,Framer Motion Shadcn and React Hooks.",
-    link: "/",
-    github: "/",
+    link: "https://marius-portfolio-kappa.vercel.app/",
+    github: "https://github.com/mariusherlea/marius-portfolio",
   },
 
   {
@@ -21,7 +21,7 @@ const projectData = [
     description:
       "NextLevel Food is a platform for foodies to share their favorite recipes with the world.",
     link: "/",
-    github: "/",
+    github: "/https://github.com/mariusherlea/food-recipe",
   },
 ];
 
