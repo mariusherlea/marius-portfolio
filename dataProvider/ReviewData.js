@@ -12,7 +12,7 @@ const reviewsData = [
   },
   {
     avatar: "/reviews/Jogga.png",
-    name: "Piciorea Vladut",
+    name: "",
     job: "Web Developer",
     review:
       "I am honored to recommend Marius Herlea for successfully completing the internshipprogram for Front-End Developer at Jogga. Throughout his tenure, Marius Herlea has demonstrated exceptional proficiency in Html, Css, JavaScript, Git, Agile, React technologies, significantly contributing to our software testing processes.",
