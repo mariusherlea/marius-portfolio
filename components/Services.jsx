@@ -6,20 +6,19 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Description } from "@radix-ui/react-dialog";
 
 const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: "Web Design",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est voluptatibus repellendus velit tempore dolore, dolores quidem natus quia voluptatem! Tempora magnam rerum quaerat quasi sed ullam deleniti provident quis corrupti.",
+      "Web design encompasses the planning, creation, and maintenance of websites. It involves a variety of disciplines and skills including graphic design, user experience (UX) design, coding, and content creation. ",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Web Development",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est voluptatibus repellendus velit tempore dolore, dolores quidem natus quia voluptatem! Tempora magnam rerum quaerat quasi sed ullam deleniti provident quis corrupti.",
+      "Web development involves the building and maintenance of websites. It is the behind-the-scenes work that makes a website look great, work fast, and perform well with a seamless user experience. ",
   },
 ];
 

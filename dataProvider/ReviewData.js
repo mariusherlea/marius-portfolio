@@ -4,46 +4,18 @@ const ReviewContext = createContext([]);
 
 const reviewsData = [
   {
-    avatar: "/reviews/avatar-1.png",
-    name: "Richard Thompson",
-    job: "Chef",
+    avatar: "/reviews/skillbrain_-_logo.svg",
+    name: "Mentor Skillbrain",
+    job: "Web Developer",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora.",
+      "Marius Herlea accepts challenges and finds solutions for the problems encountered even if it is something new that he is facing for the first time. This proves that he can isolate the problem, knows how to use the accumulated knowledge and learn new things along the way to reach the desired solution - an important quality for a Developer.",
   },
   {
-    avatar: "/reviews/avatar-2.png",
-    name: "Evelyn Anderson",
-    job: "Interior Designer",
+    avatar: "/reviews/Jogga.png",
+    name: "Piciorea Vladut",
+    job: "Web Developer",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex .",
-  },
-  {
-    avatar: "/reviews/avatar-3.png",
-    name: "John Smith",
-    job: "Game Developer",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt .",
-  },
-  {
-    avatar: "/reviews/avatar-4.png",
-    name: "Emily Williams",
-    job: "Therapist",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex deserunt.",
-  },
-  {
-    avatar: "/reviews/avatar-5.png",
-    name: "Oliver Jones",
-    job: "Engineer",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod doloribus tempora ex.",
-  },
-  {
-    avatar: "/reviews/avatar-6.png",
-    name: "Mason Brown",
-    job: "Video Editor",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque eveniet quod dol.",
+      "I am honored to recommend Marius Herlea for successfully completing the internshipprogram for Front-End Developer at Jogga. Throughout his tenure, Marius Herlea has demonstrated exceptional proficiency in Html, Css, JavaScript, Git, Agile, React technologies, significantly contributing to our software testing processes.",
   },
 ];
 

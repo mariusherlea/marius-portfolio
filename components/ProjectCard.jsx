@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
         {/**image*/}
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-center xl:bg-no-repeat overflow-hidden">
           <Image
-            className="absolute bottom-0 shadow-2xl "
+            className="absolute bottom-0 shadow-2xl"
             src={project.image}
             alt={project.name}
             width={247}
