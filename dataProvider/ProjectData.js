@@ -19,7 +19,7 @@ const projectData = [
     category: "Next.js",
     name: "Food Recipe App",
     description:
-      "NextLevel Food is a platform for foodies to share their favorite recipes with the world.",
+      "NextLevel Food - share food recipes, mongodb for recipe data, next.js, aws for image hosting.",
     link: "/",
     github: "/https://github.com/mariusherlea/food-recipe",
   },
