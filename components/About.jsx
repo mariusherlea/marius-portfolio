@@ -82,6 +82,7 @@ const skillData = [
       { name: "Javascript" },
       { name: "React" },
       { name: "Next.js, OOP" },
+      { name: "SQL, MongoDB" },
     ],
   },
   {
@@ -90,6 +91,7 @@ const skillData = [
       { imgPath: "/about/vscode.svg" },
       { imgPath: "/about/figma.svg" },
       { imgPath: "/about/notion.svg" },
+      { imgPath: "/about/postman.svg" },
     ],
   },
 ];
