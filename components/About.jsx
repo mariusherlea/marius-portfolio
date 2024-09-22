@@ -92,6 +92,8 @@ const skillData = [
       { imgPath: "/about/figma.svg" },
       { imgPath: "/about/notion.svg" },
       { imgPath: "/about/postman.svg" },
+      { imgPath: "/about/github.svg" },
+      { imgPath: "/about/strapi.svg" },
     ],
   },
 ];
