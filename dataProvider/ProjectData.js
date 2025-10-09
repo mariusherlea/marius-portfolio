@@ -5,23 +5,22 @@ const ProjectContext = createContext([]);
 
 const projectData = [
   {
-    image: "/work/5.png",
+    image: "/work/ecom.png",
     category: "Next.js",
-    name: "Portfolio Website",
+    name: "E-commerce web app",
     description:
-      "Website built with Next.js, Tailwind CSS,Framer Motion Shadcn and React Hooks.",
-    link: "https://marius-portfolio-kappa.vercel.app/",
-    github: "https://github.com/mariusherlea/marius-portfolio",
-  },
-
-  {
-    image: "/work/6.png",
-    category: "Next.js",
-    name: "Food Recipe App",
-    description:
-      "NextLevel Food - share food recipes, mongodb for recipe data, next.js, aws for image hosting.",
+      "E-commerce built with Next.js, Strapi as backend and Stripe for payment.",
     link: "/",
-    github: "/https://github.com/mariusherlea/food-recipe",
+    github: "https://github.com/mariusherlea/ecommerce-frontend",
+  },
+  {
+    image: "/work/blog.png",
+    category: "Next.js",
+    name: "Blog App",
+    description:
+      "Blog webpage with Strapi as back-end and Next.js as front-end",
+    link: "/",
+    github: "https://github.com/mariusherlea/my-blog-frontend",
   },
 ];
 
