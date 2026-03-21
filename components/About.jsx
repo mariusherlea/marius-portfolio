@@ -20,22 +20,22 @@ const infoData = [
     icon: <MailIcon size={20} />,
     text: "mariusherlea@gmail.com",
   },
-  {
-    icon: <HomeIcon size={20} />,
-    text: "Principala,Vinerea,RO",
-  },
+  // {
+  //   icon: <HomeIcon size={20} />,
+  //   text: "Principala,Vinerea,RO",
+  // },
   {
     icon: <PhoneCall size={20} />,
     text: "+40 722 256 129",
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Bachelor of Computer Science, Bachelor of Economics",
+    text: "Bachelor of Economics",
   },
-  {
-    icon: <Calendar size={20} />,
-    text: "Born on 6 Jan, 1977",
-  },
+  // {
+  //   icon: <Calendar size={20} />,
+  //   text: "Born on 6 Jan, 1977",
+  // },
 ];
 const qualificationsData = [
   {
@@ -140,9 +140,9 @@ const About = () => {
                 {/** personal info*/}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">
+                    {/* <h3 className="h3 mb-4">
                       Unmatched Service Quality for over 1 years
-                    </h3>
+                    </h3> */}
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
                       I specialize in crafting intuitive website with
                       cutting-edge techonology, delivering dynamic and engaging
