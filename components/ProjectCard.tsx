@@ -21,7 +21,7 @@ const ProjectCard = ({ project }: Props) => {
       </div>
 
       <div className="p-6">
-        <p className="mb-2 text-sm font-medium uppercase tracking-wide text-accent">
+        <p className="mb-2 text-xs font-medium text-white/60">
           {project.category}
         </p>
 
