@@ -16,6 +16,30 @@ export type Project = {
 
 // ✅ Datele tale
 const projectData: Project[] = [
+ {
+  image: "/work/storepulse.png",
+  category: "SaaS",
+  name: "StorePulse — eCommerce Analytics SaaS",
+  description:
+    "A production-style full-stack SaaS dashboard for tracking eCommerce performance, revenue, and customer activity.",
+  highlights: [
+    "Authentication system with protected dashboard access",
+    "KPI cards, sales charts, top products, and recent orders",
+    "PostgreSQL database with Prisma ORM integration",
+    "Scalable full-stack architecture built with Next.js"
+  ],
+  tech: [
+    "Next.js",
+    "TypeScript",
+    "PostgreSQL",
+    "Prisma",
+    "Auth.js",
+    "Tailwind CSS",
+    "Recharts"
+  ],
+  live: "#",
+  github: "#"
+},
   {
     image: "/work/ecom.png",
     category: "Full-Stack",

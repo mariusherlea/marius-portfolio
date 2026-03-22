@@ -1,6 +1,7 @@
 //components/ProjectCard.tsx
 "use client";
 
+import Image from "next/image";
 import { Project } from "../dataProvider/ProjectData";
 
 type Props = {
@@ -9,56 +10,72 @@ type Props = {
 
 const ProjectCard = ({ project }: Props) => {
   return (
-    <div className="border rounded-xl p-4 shadow-sm hover:shadow-md transition">
-      <img
-        src={project.image}
-        alt={project.name}
-        className="rounded-lg mb-4"
-      />
+    <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="relative aspect-[16/10] overflow-hidden">
+        <Image
+          src={project.image}
+          alt={project.name}
+          fill
+          className="object-cover transition duration-500 group-hover:scale-105"
+        />
+      </div>
 
-      <h3 className="text-xl font-semibold mb-2">
-        {project.name}
-      </h3>
+      <div className="p-6">
+        <p className="mb-2 text-sm font-medium uppercase tracking-wide text-accent">
+          {project.category}
+        </p>
 
-      <p className="text-muted-foreground mb-3">
-        {project.description}
-      </p>
+        <h3 className="mb-3 text-xl font-semibold leading-tight">
+          {project.name}
+        </h3>
 
-      <ul className="text-sm mb-4 space-y-1">
-        {project.highlights.map((item, i) => (
-          <li key={i}>• {item}</li>
-        ))}
-      </ul>
+        <p className="mb-4 text-sm leading-6 text-white/70">
+          {project.description}
+        </p>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.tech.map((tech, i) => (
-          <span
-            key={i}
-            className="text-xs px-2 py-1 bg-gray-200 rounded"
+        <ul className="mb-5 space-y-2 text-sm text-white/80">
+          {project.highlights.map((item, i) => (
+            <li key={i} className="flex gap-2">
+              <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-accent" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mb-6 flex flex-wrap gap-2">
+          {project.tech.map((tech, i) => (
+            <span
+              key={i}
+              className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/70"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-4">
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-black transition hover:opacity-90"
           >
-            {tech}
-          </span>
-        ))}
-      </div>
+            Live Demo
+          </a>
 
-      <div className="flex gap-3">
-        <a
-          href={project.live}
-          target="_blank"
-          className="underline"
-        >
-          Live Demo
-        </a>
-        <a
-          href={project.github}
-          target="_blank"
-          className="underline"
-        >
-          GitHub
-        </a>
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium underline underline-offset-4 transition hover:text-accent"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
-    </div>
+    </article>
   );
 };
 
 export default ProjectCard;
+

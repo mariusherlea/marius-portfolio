@@ -23,16 +23,17 @@ const Hero = () => {
               Web Developer
             </div> */}
             <h1 className="h1 mb-4">Ion-Marius Herlea</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-             Full-Stack Developer building modern web applications with Next.js, TypeScript, and Strapi.
+          <p className="subtitle max-w-[520px] mx-auto xl:mx-0 mb-4">
+  Full-Stack Developer building modern SaaS, eCommerce, and content platforms with Next.js and TypeScript.
 </p><p>
-I develop scalable eCommerce and content platforms with clean UI and real-world functionality.
+I develop scalable, production-focused web applications with clean UI, real-world features, and solid backend integrations using PostgreSQL, Strapi, and Stripe.
+
             </p>
             {/** buttons*/}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-6 mt-6">
               <Link href="/projects">
                 <Button className="gap-x-2">
-                  Projects <Send size={18} />
+                  View Projects <Send size={18} />
                 </Button>
               </Link>
               <a href="https://www.linkedin.com/in/mariusherlea/">
