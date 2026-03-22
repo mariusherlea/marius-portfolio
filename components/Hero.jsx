@@ -38,7 +38,7 @@ I develop scalable, production-focused web applications with clean UI, real-worl
               </Link>
               <a href="https://www.linkedin.com/in/mariusherlea/">
                 <Button variant="secondary" className="gap-x-2">
-                  Linkedin
+                  LinkedIn
                   <Linkedin size={18} />
                 </Button>
               </a>

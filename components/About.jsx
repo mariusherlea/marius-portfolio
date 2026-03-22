@@ -4,11 +4,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   User2,
   MailIcon,
-  HomeIcon,
   PhoneCall,
   GraduationCap,
-  Calendar,
-  Briefcase,
+    Briefcase, Github,
+  Globe,
+  Database,
+  Server,
+  CreditCard,
+  Wrench,
 } from "lucide-react";
 
 const infoData = [
@@ -73,22 +76,24 @@ const skillData = [
   {
     title: "skills",
     data: [
-      { name: "HTML, CSS " },
-      { name: "Javascript" },
+      { name: "Next.js" },
       { name: "React" },
-      { name: "Next.js, OOP" },
-      { name: "SQL, MongoDB" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "PostgreSQL" },
+      { name: "Prisma ORM" },
+      { name: "Strapi" },
+      { name: "REST APIs" },
     ],
   },
   {
     title: "tools",
     data: [
-      { imgPath: "/about/vscode.svg" },
-      { imgPath: "/about/figma.svg" },
-      { imgPath: "/about/notion.svg" },
-      { imgPath: "/about/postman.svg" },
-      { imgPath: "/about/github.svg" },
-      { imgPath: "/about/strapi.svg" },
+    { name: "GitHub", icon: Github },
+      { name: "Vercel", icon: Globe },
+      { name: "Postman", icon: Server },
+      { name: "Prisma", icon: Database },
+      { name: "Stripe", icon: CreditCard },
     ],
   },
 ];
@@ -247,16 +252,11 @@ const About = () => {
                       <div className="border-b border-border mb-4"></div>
                       {/** skills list*/}
                       <div>
-                        {getData(skillData, "skills").data.map(
-                          (item, index) => (
-                            <div
-                              className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
-                              key={index}
-                            >
-                              <div className="font-medium">{item.name}</div>
-                            </div>
-                          )
-                        )}
+                        {getData(skillData, "skills")?.data?.map((item, index) => (
+                          <div key={index}>
+                            {item.name}
+                          </div>
+                        ))}
                       </div>
                     </div>
                     {/** tools*/}
@@ -269,13 +269,10 @@ const About = () => {
                       <div className="flex gap-x-8 justify-center xl:justify-start">
                         {getData(skillData, "tools").data.map((item, index) => (
                           <div key={index}>
-                            <Image
-                              src={item.imgPath}
-                              alt="ceva"
-                              width={48}
-                              height={48}
-                              priority
-                            />
+                          <div className="flex items-center gap-2 px-3 py-2 border border-white/10 rounded-lg hover:border-accent transition">
+  {item.icon && <item.icon size={16} />}
+  <span className="text-sm">{item.name}</span>
+</div>
                           </div>
                         ))}
                       </div>
