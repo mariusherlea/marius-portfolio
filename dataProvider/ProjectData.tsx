@@ -38,7 +38,7 @@ const projectData: Project[] = [
     "Recharts"
   ],
   live: "#",
-  github: "#"
+  github: "https://github.com/mariusherlea/ecommerce-analytics-saas"
 },
   {
     image: "/work/ecom.png",

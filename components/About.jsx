@@ -2,23 +2,22 @@ import DevImg from "./DevImg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  User2,
   MailIcon,
   PhoneCall,
   GraduationCap,
-    Briefcase, Github,
+  Briefcase,
+  Github,
   Globe,
   Database,
   Server,
   CreditCard,
-  Wrench,
-} from "lucide-react";
+ } from "lucide-react";
 
 const infoData = [
-  {
-    icon: <User2 size={20} />,
-    text: "Herlea Marius",
-  },
+  // {
+  //   icon: <User2 size={20} />,
+  //   text: "Herlea Marius",
+  // },
   {
     icon: <MailIcon size={20} />,
     text: "mariusherlea@gmail.com",
@@ -270,9 +269,9 @@ const About = () => {
                         {getData(skillData, "tools").data.map((item, index) => (
                           <div key={index}>
                           <div className="flex items-center gap-2 px-3 py-2 border border-white/10 rounded-lg hover:border-accent transition">
-  {item.icon && <item.icon size={16} />}
-  <span className="text-sm">{item.name}</span>
-</div>
+                            {item.icon && <item.icon size={16} />}
+                            <span className="text-sm">{item.name}</span>
+                          </div>
                           </div>
                         ))}
                       </div>
