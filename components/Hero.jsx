@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Download, Send } from "lucide-react";
+import {  Send , Linkedin, Github} from "lucide-react";
 
 import {
   RiBriefcase4Fill,
@@ -29,26 +29,32 @@ const Hero = () => {
 I develop scalable eCommerce and content platforms with clean UI and real-world functionality.
             </p>
             {/** buttons*/}
-            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href="/contact">
+            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-6 mt-6">
+              <Link href="/projects">
                 <Button className="gap-x-2">
-                  Contact me <Send size={18} />
+                  Projects <Send size={18} />
                 </Button>
               </Link>
-              <a href="/cv.pdf">
+              <a href="https://www.linkedin.com/in/mariusherlea/">
                 <Button variant="secondary" className="gap-x-2">
-                  CV
-                  <Download size={18} />
+                  Linkedin
+                  <Linkedin size={18} />
+                </Button>
+              </a>
+              <a href="https://github.com/mariusherlea">
+                <Button variant="secondary" className="gap-x-2">
+                 GitHub
+                  <Github size={18} />
                 </Button>
               </a>
             </div>
             {/** socials*/}
-            <Socials
+            {/* <Socials
               containerStyles={"flex gap-x-6 mx-auto xl:mx-0"}
               iconsStyles={
                 "text-foreground text-[22px] hover:text-primary transition-colors duration-200"
               }
-            />
+            /> */}
           </div>
 
           {/** image*/}

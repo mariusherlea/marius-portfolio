@@ -65,12 +65,7 @@ const qualificationsData = [
         company: "Skillbrain-Jogga internship",
         qualification: "Front End Developer",
         year: "2024",
-      },
-      {
-        company: "schmalzle fleischwaren GmbH",
-        qualification: "Worker",
-        year: "2022-2023",
-      },
+      }
     ],
   },
 ];
