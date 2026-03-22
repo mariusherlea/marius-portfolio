@@ -29,10 +29,10 @@ const Contact = () => {
               <div>mariusherlea@gmail.com</div>
             </div>
             {/**address */}
-            <div className="flex items-center gap-x-8">
+            {/* <div className="flex items-center gap-x-8">
               <HomeIcon size={18} className="text-primary" />
               <div>Principala,Vinerea,Alba</div>
-            </div>
+            </div> */}
             {/**phone */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
