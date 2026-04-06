@@ -37,7 +37,7 @@ const projectData: Project[] = [
     "Tailwind CSS",
     "Recharts"
   ],
-  live: "#",
+  live: "https://candid-pie-22ddca.netlify.app/",
   github: "https://github.com/mariusherlea/ecommerce-analytics-saas"
 },
   {
@@ -53,7 +53,7 @@ const projectData: Project[] = [
       "Responsive UI with Tailwind CSS",
     ],
     tech: ["Next.js", "TypeScript", "Strapi", "Stripe", "Tailwind CSS"],
-    live: "#",
+    live: "https://ecommerce-frontend-zeta-liard.vercel.app/",
     github: "https://github.com/mariusherlea/ecommerce-frontend",
   },
   {
@@ -69,7 +69,7 @@ const projectData: Project[] = [
       "Portable text rendering",
     ],
     tech: ["Next.js", "TypeScript", "Strapi", "REST API"],
-    live: "#",
+    live: "https://my-blog-frontend-lime.vercel.app/",
     github: "https://github.com/mariusherlea/my-blog-frontend",
   },
 ];

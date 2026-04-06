@@ -54,14 +54,14 @@ const ProjectCard = ({ project }: Props) => {
         </div>
 
         <div className="flex items-center gap-4">
-          {/* <a
+          <a
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-black transition hover:opacity-90"
+            className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-yellow transition hover:opacity-90"
           >
             Live Demo
-          </a> */}
+          </a>
 
           <a
             href={project.github}
