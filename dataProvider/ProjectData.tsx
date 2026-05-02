@@ -23,10 +23,9 @@ const projectData: Project[] = [
   description:
     "A production-style full-stack SaaS dashboard for tracking eCommerce performance, revenue, and customer activity.",
   highlights: [
-    "Authentication system with protected dashboard access",
-    "KPI cards, sales charts, top products, and recent orders",
-    "PostgreSQL database with Prisma ORM integration",
-    "Scalable full-stack architecture built with Next.js"
+    "Built a SaaS-style analytics dashboard for tracking sales, performance, and user behavior",
+    "Designed scalable UI for handling dynamic data and real-time updates",
+    "Focused on clean architecture, reusable components, and performance optimization"
   ],
   tech: [
     "Next.js",
@@ -47,10 +46,9 @@ const projectData: Project[] = [
     description:
       "A modern eCommerce application built with Next.js 15 and Strapi.",
     highlights: [
-      "Dynamic product pages with server-side rendering",
-      "Cart functionality using React Context",
-      "Stripe payment integration",
-      "Responsive UI with Tailwind CSS",
+      "Developed a full eCommerce experience with product pages, cart, and checkout flow",
+      "Integrated Stripe for secure payments and handled client-server data interactions",
+      "Focused on user experience, state management, and scalable component structure",
     ],
     tech: ["Next.js", "TypeScript", "Strapi", "Stripe", "Tailwind CSS"],
     live: "https://ecommerce-frontend-zeta-liard.vercel.app/",
@@ -63,10 +61,9 @@ const projectData: Project[] = [
     description:
       "A content-driven blog built with Next.js and Strapi.",
     highlights: [
-      "Server-side pagination",
-      "SEO optimization (meta tags, slugs)",
-      "Comment system with moderation",
-      "Portable text rendering",
+      "Built a content-driven platform with dynamic routing, comments, and pagination",
+      "Implemented SEO features including slugs and structured content rendering",
+      "Focused on performance, clean UI, and maintainable frontend architecture",
     ],
     tech: ["Next.js", "TypeScript", "Strapi", "REST API"],
     live: "https://my-blog-frontend-lime.vercel.app/",
