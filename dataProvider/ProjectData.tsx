@@ -51,7 +51,7 @@ const projectData: Project[] = [
       "Focused on user experience, state management, and scalable component structure",
     ],
     tech: ["Next.js", "TypeScript", "Strapi", "Stripe", "Tailwind CSS"],
-    live: "https://ecommerce-frontend-zeta-liard.vercel.app/",
+    live: "https://ecommerce-frontend-otpz.vercel.app/",
     github: "https://github.com/mariusherlea/ecommerce-frontend",
   },
   {
