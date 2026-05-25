@@ -47,16 +47,17 @@ export const metadata = {
   ],
 
   creator: "Marius Herlea",
-
+  
+   verification: {
+  google:"e-kySbVzM1ZS1szCb4zJEj-FMVsf4EEgC6IYuon38vI" 
+},
   openGraph: {
     title: "Marius Herlea | Full Stack Developer",
 
     description:
       "Portfolio featuring Next.js, React, TypeScript, Strapi and SaaS projects.",
       
-      verification: {
-  google:"e-kySbVzM1ZS1szCb4zJEj-FMVsf4EEgC6IYuon38vI" 
-},
+   
 
     url: "https://marius-portfolio-kappa.vercel.app",
 
