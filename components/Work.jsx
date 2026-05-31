@@ -39,24 +39,23 @@ const Work = () => {
         {/**slider*/}
         <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[480px]"
-            slidesPerView={1}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-            }}
-            spaceBetween={30}
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
-          >
-            {/** show only the firs 4 projects for the slides */}
-            {projectData.slice(0, 4).map((project, index) => (
-              <SwiperSlide key={index}>
-                <ProjectCard project={project} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+  className="!h-[560px] !pb-14"
+  slidesPerView={1}
+  breakpoints={{
+    640: {
+      slidesPerView: 2,
+    },
+  }}
+  spaceBetween={30}
+  modules={[Pagination]}
+  pagination={{ clickable: true }}
+>
+  {projectData.slice(0, 4).map((project, index) => (
+    <SwiperSlide className="!h-[520px]" key={index}>
+      <ProjectCard project={project} />
+    </SwiperSlide>
+  ))}
+</Swiper>
         </div>
       </div>
     </section>

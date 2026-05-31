@@ -1,6 +1,7 @@
+//components/Hero.jsx
 import Link from "next/link";
 import { Button } from "./ui/button";
-import {  Send , Linkedin, Github} from "lucide-react";
+import {  Send , Linkedin, Github, FileText } from "lucide-react";
 
 import {
   RiBriefcase4Fill,
@@ -36,6 +37,18 @@ I develop scalable, production-focused web applications with clean UI, real-worl
                   View Projects <Send size={18} />
                 </Button>
               </Link>
+
+ <a
+    href="/cv.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button variant="secondary" className="gap-x-2">
+      Download CV
+      <FileText  size={18} />
+    </Button>
+  </a>
+
               <a href="https://www.linkedin.com/in/mariusherlea/">
                 <Button variant="secondary" className="gap-x-2">
                   LinkedIn

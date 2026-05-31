@@ -1,4 +1,3 @@
-//components/ProjectCard.tsx
 "use client";
 
 import Image from "next/image";
@@ -10,7 +9,7 @@ type Props = {
 
 const ProjectCard = ({ project }: Props) => {
   return (
-    <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <article className="group flex h-[520px] flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative aspect-[16/10] overflow-hidden">
         <Image
           src={project.image}
@@ -20,7 +19,7 @@ const ProjectCard = ({ project }: Props) => {
         />
       </div>
 
-      <div className="p-6">
+      <div className="flex flex-1 flex-col p-6">
         <p className="mb-2 text-xs font-medium text-white/60">
           {project.category}
         </p>
@@ -29,12 +28,12 @@ const ProjectCard = ({ project }: Props) => {
           {project.name}
         </h3>
 
-        <p className="mb-4 text-sm leading-6 text-white/70">
+        <p className="mb-4 min-h-[72px] line-clamp-3 text-sm leading-6 text-white/70">
           {project.description}
         </p>
 
-        <ul className="mb-5 space-y-2 text-sm text-white/80">
-          {project.highlights.map((item, i) => (
+        <ul className="mb-5 min-h-[96px] space-y-2 text-sm text-white/80">
+          {project.highlights.slice(0, 3).map((item, i) => (
             <li key={i} className="flex gap-2">
               <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-accent" />
               <span>{item}</span>
@@ -42,18 +41,18 @@ const ProjectCard = ({ project }: Props) => {
           ))}
         </ul>
 
-        <div className="mb-6 flex flex-wrap gap-2">
+        <div className="mb-6 flex min-h-[72px] flex-wrap content-start gap-2">
           {project.tech.map((tech, i) => (
             <span
               key={i}
-              className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/70"
+              className="h-fit rounded-full border border-white/10 px-3 py-1 text-xs text-white/70"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="mt-auto flex items-center gap-4">
           <a
             href={project.live}
             target="_blank"
@@ -78,4 +77,3 @@ const ProjectCard = ({ project }: Props) => {
 };
 
 export default ProjectCard;
-
