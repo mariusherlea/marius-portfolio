@@ -44,7 +44,7 @@ export const metadata = {
   creator: "Marius Herlea",
 
   verification: {
-    google: "e-kySbVzM1ZS1szCb4zJEj-FMVsf4EEgC6IYuon38vI",
+    google: "9Yfq0y-el0uz9Q79zPdKstvOZZzUe1w-5nBDoyaBqng"
   },
 
   openGraph: {
