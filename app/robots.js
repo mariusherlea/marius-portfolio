@@ -5,7 +5,7 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap:
-      "https://marius-portfolio-kappa.vercel.app/sitemap.xml",
+
+    sitemap: "https://www.mariusherlea.dev/sitemap.xml",
   };
 }

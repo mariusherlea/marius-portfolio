@@ -1,23 +1,5 @@
-// app/layout.jsx
-
-import { Outfit } from "next/font/google";
-import "./globals.css";
-
-// Components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-// Theme provider
-import { ThemeProvider } from "@/components/ThemeProvider";
-
-const outfit = Outfit({
-  subsets: ["latin"],
-});
-
 export const metadata = {
-  metadataBase: new URL(
-    "https://marius-portfolio-kappa.vercel.app"
-  ),
+  metadataBase: new URL("https://www.mariusherlea.dev"),
 
   title: {
     default: "Marius Herlea | Full Stack Developer",
@@ -29,6 +11,7 @@ export const metadata = {
 
   keywords: [
     "Marius Herlea",
+    "Ion-Marius Herlea",
     "Full Stack Developer",
     "Next.js Developer",
     "React Developer",
@@ -43,30 +26,24 @@ export const metadata = {
   authors: [
     {
       name: "Marius Herlea",
+      url: "https://www.mariusherlea.dev",
     },
   ],
 
   creator: "Marius Herlea",
-  
-   verification: {
-  google:"e-kySbVzM1ZS1szCb4zJEj-FMVsf4EEgC6IYuon38vI" 
-},
+
+  verification: {
+    google: "e-kySbVzM1ZS1szCb4zJEj-FMVsf4EEgC6IYuon38vI",
+  },
+
   openGraph: {
     title: "Marius Herlea | Full Stack Developer",
-
     description:
       "Portfolio featuring Next.js, React, TypeScript, Strapi and SaaS projects.",
-      
-   
-
-    url: "https://marius-portfolio-kappa.vercel.app",
-
+    url: "https://www.mariusherlea.dev",
     siteName: "Marius Herlea Portfolio",
-
     locale: "en_US",
-
     type: "website",
-
     images: [
       {
         url: "/og-image.png",
@@ -79,12 +56,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "Marius Herlea | Full Stack Developer",
-
     description:
       "Portfolio featuring Next.js, React, TypeScript and SaaS projects.",
-
     images: ["/og-image.png"],
   },
 
@@ -93,20 +67,3 @@ export const metadata = {
     follow: true,
   },
 };
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={outfit.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-        >
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
-}
