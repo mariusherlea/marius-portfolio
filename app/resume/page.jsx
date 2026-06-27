@@ -114,6 +114,14 @@ const ResumePage = () => {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold">
+                  TruckMate — Smart Navigation & POI Platform for Professional Drivers
+                </h3>
+                <p className="text-muted-foreground mt-2">
+                  A cross-platform mobile application that helps professional truck drivers discover truck parking, fuel stations, restaurants, showers, repair services, and logistics facilities through intelligent map clustering, geolocation, and route-aware search. Built with React Native, Expo, TypeScript, and Google Maps.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">
                   StorePulse — eCommerce Analytics SaaS
                 </h3>
                 <p className="text-muted-foreground mt-2">
