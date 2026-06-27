@@ -23,7 +23,7 @@ const Hero = () => {
             {/* <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div> */}
-            <h1 className="h1 mb-4">Ion-Marius Herlea</h1>
+            <h1 className="h1 mb-4">Marius Herlea</h1>
           <p className="subtitle max-w-[520px] mx-auto xl:mx-0 mb-4">
   Full-Stack Developer building modern SaaS, eCommerce, and content platforms with Next.js and TypeScript.
 </p><p>

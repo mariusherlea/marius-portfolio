@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Download, Mail, Github, Linkedin } from "lucide-react";
 
 export const metadata = {
-  title: "Resume | Ion-Marius Herlea",
+  title: "Resume | Marius Herlea",
   description:
-    "Resume of Ion-Marius Herlea, Full-Stack Developer working with Next.js, React, TypeScript, Strapi, PostgreSQL, Stripe, and modern web applications.",
+    "Resume of Marius Herlea, Full-Stack & Mobile Developer specializing in React, Next.js, React Native, TypeScript, PostgreSQL, Strapi, Prisma, and modern web technologies.",
 };
 
 const ResumePage = () => {
@@ -16,14 +16,14 @@ const ResumePage = () => {
           <h1 className="h1 mb-4">Resume</h1>
 
           <p className="subtitle max-w-3xl mx-auto xl:mx-0">
-            Ion-Marius Herlea — Full-Stack Developer focused on modern SaaS,
+            Marius Herlea — Full-Stack Developer focused on modern SaaS,
             eCommerce, and content platforms with Next.js, React, TypeScript,
             Strapi, PostgreSQL, and Stripe.
           </p>
 
           <div className="flex flex-col md:flex-row gap-3 mt-6 justify-center xl:justify-start">
             <a
-              href="/cv/marius-herlea-cv.pdf"
+              href="/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -68,45 +68,88 @@ const ResumePage = () => {
           <div className="rounded-2xl border p-6 shadow-sm">
             <h2 className="text-2xl font-bold mb-4">Professional Summary</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Full-Stack Developer with hands-on experience building
-              production-focused applications using Next.js, React, TypeScript,
-              Strapi, PostgreSQL, Prisma, Stripe, and modern UI tools. I build
-              practical web applications with clean interfaces, real backend
-              integrations, authentication, payments, dashboards, SEO, and
-              deployment-ready architecture.
-            </p>
+  Full-Stack & Mobile Developer with hands-on experience building
+  production-style web and mobile applications using React, Next.js,
+  React Native, TypeScript, Strapi, PostgreSQL, Prisma, and modern cloud
+  technologies. Passionate about transforming ideas into scalable products
+  through clean architecture, reusable components, intuitive user
+  experiences, and performance-focused development.
+</p>
           </div>
 
           <div className="rounded-2xl border p-6 shadow-sm">
             <h2 className="text-2xl font-bold mb-4">Technical Skills</h2>
 
             <div className="grid md:grid-cols-2 gap-4 text-muted-foreground">
-              <p>
-                <strong className="text-foreground">Frontend:</strong> React,
-                Next.js, TypeScript, JavaScript, Tailwind CSS, HTML, CSS
-              </p>
-              <p>
-                <strong className="text-foreground">Backend:</strong> Strapi,
-                Next.js API Routes, Node.js, REST APIs
-              </p>
-              <p>
-                <strong className="text-foreground">Database:</strong>{" "}
-                PostgreSQL, Prisma, Neon
-              </p>
-              <p>
-                <strong className="text-foreground">Payments/Auth:</strong>{" "}
-                Stripe, Webhooks, NextAuth, JWT
-              </p>
-              <p>
-                <strong className="text-foreground">Tools:</strong> Git,
-                GitHub, Vercel, Render, Cloudflare, VS Code
-              </p>
-              <p>
-                <strong className="text-foreground">Other:</strong> SEO,
-                responsive design, deployment, debugging, clean UI
-              </p>
-            </div>
+  <p>
+    <strong className="text-foreground">Frontend: </strong>
+     React, Next.js, TypeScript, JavaScript, Tailwind CSS
+  </p>
+
+  <p>
+    <strong className="text-foreground">Mobile: </strong>
+     React Native, Expo, Google Maps API
+  </p>
+
+  <p>
+    <strong className="text-foreground">Backend: </strong>
+     Node.js, Strapi, REST APIs, Next.js API Routes
+  </p>
+
+  <p>
+    <strong className="text-foreground">Database: </strong>
+     PostgreSQL, Prisma, SQLite, Neon
+  </p>
+
+  <p>
+    <strong className="text-foreground">Authentication: </strong>
+    NextAuth, Clerk, JWT
+  </p>
+
+  <p>
+    <strong className="text-foreground">Payments: </strong>
+    Stripe, Webhooks
+  </p>
+
+  <p>
+    <strong className="text-foreground">Deployment: </strong>
+    Vercel, Render, Cloudflare
+  </p>
+
+  <p>
+    <strong className="text-foreground">Tools: </strong>
+    Git, GitHub, VS Code
+  </p>
+</div>
           </div>
+
+<div className="rounded-2xl border p-6 shadow-sm">
+  <h2 className="text-2xl font-bold mb-4">Core Technologies</h2>
+
+  <div className="flex flex-wrap gap-3">
+    {[
+      "React",
+      "Next.js",
+      "React Native",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Strapi",
+      "Stripe",
+      "Google Maps",
+      "Tailwind CSS",
+      "REST APIs",
+      "Git",
+    ].map((tech) => (
+      <span
+        key={tech}
+        className="rounded-full border px-4 py-2 text-sm font-medium"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
+</div>
 
           <div className="rounded-2xl border p-6 shadow-sm">
             <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
@@ -117,18 +160,22 @@ const ResumePage = () => {
                   TruckMate — Smart Navigation & POI Platform for Professional Drivers
                 </h3>
                 <p className="text-muted-foreground mt-2">
-                  A cross-platform mobile application that helps professional truck drivers discover truck parking, fuel stations, restaurants, showers, repair services, and logistics facilities through intelligent map clustering, geolocation, and route-aware search. Built with React Native, Expo, TypeScript, and Google Maps.
-                </p>
+                  Cross-platform mobile application designed for professional truck
+  drivers to discover truck parking, fuel stations, restaurants,
+  showers, repair services, and logistics facilities using Google Maps,
+  intelligent marker clustering, geolocation, and route-aware
+  navigation. Built with React Native, Expo, TypeScript, and Google Maps.</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold">
                   StorePulse — eCommerce Analytics SaaS
                 </h3>
                 <p className="text-muted-foreground mt-2">
-                  SaaS dashboard built with Next.js, TypeScript, PostgreSQL,
-                  Prisma, NextAuth, Recharts, and Tailwind CSS. Includes
-                  authentication, revenue metrics, orders, customers, charts,
-                  top products, and recent orders.
+                 Production-style SaaS analytics platform built with Next.js,
+  TypeScript, PostgreSQL, Prisma, NextAuth, Recharts, and Tailwind CSS.
+  Features interactive dashboards, KPI tracking, customer insights,
+  revenue analytics, secure authentication, and responsive data
+  visualization.
                 </p>
               </div>
 
@@ -175,11 +222,11 @@ const ResumePage = () => {
                   Portfolio Projects · 2024 — Present
                 </p>
                 <p className="text-muted-foreground mt-2">
-                  Built and deployed full-stack web applications using React,
-                  Next.js, TypeScript, Strapi, PostgreSQL, Prisma, Stripe, and
-                  modern frontend tooling. Focused on real-world features,
-                  clean UI, SEO, authentication, payments, dashboards, and
-                  scalable project structure.
+                   Designed, built, and deployed multiple production-style web and mobile
+  applications using React, Next.js, React Native, TypeScript, Strapi,
+  PostgreSQL, Prisma, and Stripe. Focused on scalable architecture,
+  authentication, dashboards, SEO, responsive interfaces, API
+  integrations, and real-world software solutions.
                 </p>
               </div>
 
@@ -217,6 +264,7 @@ const ResumePage = () => {
                 mariusherlea@gmail.com
               </a>
             </p>
+
             <p className="text-muted-foreground mt-2">
               LinkedIn:{" "}
               <a

@@ -22,7 +22,6 @@ export const metadata = {
 
   keywords: [
     "Marius Herlea",
-    "Ion-Marius Herlea",
     "Full Stack Developer",
     "Next.js Developer",
     "React Developer",
