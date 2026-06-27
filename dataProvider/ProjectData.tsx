@@ -10,12 +10,37 @@ export type Project = {
   description: string;
   highlights: string[];
   tech: string[];
-  live: string;
+  live?: string;
   github: string;
 };
 
 // ✅ Datele tale
 const projectData: Project[] = [
+  {
+  image: "/work/truckmate.png",
+  category: "Mobile",
+  name: "TruckMate — Smart Navigation for Professional Drivers",
+  description:
+    "A cross-platform mobile application that helps professional truck drivers discover essential points of interest such as truck parking, fuel stations, restaurants, showers, and service locations through an interactive map experience.",
+
+  highlights: [
+    "Developed a location-based mobile application with Google Maps integration and real-time map interaction",
+    "Implemented intelligent marker clustering to efficiently display large numbers of locations while maintaining performance",
+    "Designed custom map markers, interactive location cards, and smooth zoom-to-cluster navigation",
+    "Built scalable architecture for future integration with backend services, user-generated content, and location management"
+  ],
+
+  tech: [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Google Maps",
+    "React Native Maps"
+  ],
+
+  
+  github: "https://github.com/mariusherlea/poi-map-mobile-sdk53"
+},
  {
   image: "/work/storepulse.png",
   category: "SaaS",
@@ -66,7 +91,7 @@ const projectData: Project[] = [
       "Focused on performance, clean UI, and maintainable frontend architecture",
     ],
     tech: ["Next.js", "TypeScript", "Strapi", "REST API"],
-    live: "https://my-blog-frontend-lime.vercel.app/",
+    // live: "https://my-blog-frontend-lime.vercel.app/",
     github: "https://github.com/mariusherlea/my-blog-frontend",
   },
 ];

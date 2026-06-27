@@ -55,12 +55,7 @@ I develop scalable, production-focused web applications with clean UI, real-worl
                   <Linkedin size={18} />
                 </Button>
               </a>
-              <a href="https://github.com/mariusherlea">
-                <Button variant="secondary" className="gap-x-2">
-                 GitHub
-                  <Github size={18} />
-                </Button>
-              </a>
+              
             </div>
             {/** socials*/}
             {/* <Socials
