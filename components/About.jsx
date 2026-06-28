@@ -20,7 +20,7 @@ const infoData = [
   // },
   {
     icon: <MailIcon size={20} />,
-    text: "mariusherlea@gmail.com",
+    text: "contact@mariusherlea.dev",
   },
   // {
   //   icon: <HomeIcon size={20} />,

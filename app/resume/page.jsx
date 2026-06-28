@@ -33,7 +33,7 @@ const ResumePage = () => {
               </Button>
             </a>
 
-            <a href="mailto:mariusherlea@gmail.com">
+            <a href="mailto:contact@mariusherlea.dev">
               <Button variant="secondary" className="gap-x-2">
                 Email
                 <Mail size={18} />
@@ -258,10 +258,10 @@ const ResumePage = () => {
             <p className="text-muted-foreground">
               Email:{" "}
               <a
-                href="mailto:mariusherlea@gmail.com"
+                href="mailto:contact@mariusherlea.dev"
                 className="text-primary underline"
               >
-                mariusherlea@gmail.com
+                contact@mariusherlea.dev
               </a>
             </p>
 
