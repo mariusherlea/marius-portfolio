@@ -19,7 +19,7 @@ import { Pagination } from "swiper/modules";
 const Reviews = () => {
   const reviewsData = useReviews();
   return (
-    <section className="mb-12 xl:mb-32">
+    <section className="mt-12 mb-12 xl:mb-32">
       <div className="container mx-auto ">
         <h2 className="section-title mb-12 text-center mx-auto">Reviews</h2>
         {/**swiper slider container*/}

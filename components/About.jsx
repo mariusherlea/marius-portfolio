@@ -10,7 +10,7 @@ import {
   Globe,
   Database,
   Server,
-  CreditCard,
+  CreditCard, Figma,Monitor, Terminal, GitBranch, Code2
  } from "lucide-react";
 
 const infoData = [
@@ -26,10 +26,10 @@ const infoData = [
   //   icon: <HomeIcon size={20} />,
   //   text: "Principala,Vinerea,RO",
   // },
-  {
-    icon: <PhoneCall size={20} />,
-    text: "+40 722 256 129",
-  },
+  // {
+  //   icon: <PhoneCall size={20} />,
+  //   text: "+40 722 256 129",
+  // },
   {
     icon: <GraduationCap size={20} />,
     text: "Bachelor of Economics",
@@ -67,7 +67,11 @@ const qualificationsData = [
         company: "Skillbrain-Jogga internship",
         qualification: "Front End Developer",
         year: "2024",
-      }
+      }, {
+  company: "Personal Projects",
+  qualification: "Full-Stack Developer",
+  year: "2024 - Present",
+}
     ],
   },
 ];
@@ -81,18 +85,27 @@ const skillData = [
       { name: "Tailwind CSS" },
       { name: "PostgreSQL" },
       { name: "Prisma ORM" },
-      { name: "Strapi" },
+      { name: "StrapiCMS" },
       { name: "REST APIs" },
+      { name: "Git" },
+      { name: "Responsive Design" },
+      { name: "SEO" },
+      { name: "Authentication (Clerk)" },
+      { name: "Stripe" }     
     ],
   },
   {
     title: "tools",
     data: [
-    { name: "GitHub", icon: Github },
+
+      { name: "VS Code", icon: Code2 },
       { name: "Vercel", icon: Globe },
       { name: "Postman", icon: Server },
       { name: "Prisma", icon: Database },
       { name: "Stripe", icon: CreditCard },
+      { name: "Git", icon: GitBranch },
+      { name: "Figma", icon: Figma },
+
     ],
   },
 ];
@@ -139,13 +152,8 @@ const About = () => {
                 {/** personal info*/}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    {/* <h3 className="h3 mb-4">
-                      Unmatched Service Quality for over 1 years
-                    </h3> */}
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      I specialize in crafting intuitive website with
-                      cutting-edge techonology, delivering dynamic and engaging
-                      user experience.
+                     Full-Stack Developer specializing in Next.js, React, TypeScript and Strapi. I build modern, responsive web applications with REST APIs, authentication, payment integration and SEO best practices.
                     </p>
                     {/** icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mt-12">
@@ -163,7 +171,8 @@ const About = () => {
                     <div className="mt-12 flex flex-col gap-y-2">
                       <div className="text-primary">Language Skill</div>
                       <div className="border-b border-border"></div>
-                      <div>English</div>
+                      <div>Romanian – Native</div><div>
+English – Professional Working Proficiency</div>
                     </div>
                   </div>
                 </TabsContent>
@@ -244,19 +253,19 @@ const About = () => {
                 </TabsContent>
                 {/** skills*/}
                 <TabsContent value="skills">
-                  <div className="text-center xl:text-left">
+                  <div className="text-center xl:text-left xl:max-w-[668px]">
                     <h3 className="h3 mb-8">What I Use Everyday</h3>
                     <div className="mb-16">
                       <h4 className="text-xl font-semibold mb-2">Skills</h4>
                       <div className="border-b border-border mb-4"></div>
                       {/** skills list*/}
-                      <div>
-                        {getData(skillData, "skills")?.data?.map((item, index) => (
-                          <div key={index}>
-                            {item.name}
-                          </div>
-                        ))}
-                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+  {getData(skillData, "skills")?.data?.map((item, index) => (
+    <div key={index} className="flex items-center">
+      {item.name}
+    </div>
+  ))}
+</div>
                     </div>
                     {/** tools*/}
                     <div>
@@ -265,7 +274,7 @@ const About = () => {
                       </h4>
                       <div className="border-b border-border mb-4"></div>
                       {/** tools list*/}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 justify-center xl:justify-start">
                         {getData(skillData, "tools").data.map((item, index) => (
                           <div key={index}>
                           <div className="flex items-center gap-2 px-3 py-2 border border-white/10 rounded-lg hover:border-accent transition">
