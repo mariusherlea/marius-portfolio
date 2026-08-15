@@ -18,16 +18,28 @@ export type Project = {
 const projectData: Project[] = [
   {
   image: "/work/truckmate.png",
-  category: "Mobile",
-  name: "TruckMate — Smart Navigation for Professional Drivers",
+  category: "Mobile / Algorithms",
+  name: "TruckMate — Smart Navigation & Route Optimization for Professional Drivers",
+
   description:
-    "A cross-platform mobile application that helps professional truck drivers discover essential points of interest such as truck parking, fuel stations, restaurants, showers, and service locations through an interactive map experience.",
+    "A cross-platform mobile application designed for professional truck drivers to discover, organize, and optimize routes between essential points of interest such as truck parking, fuel stations, restaurants, showers, and service locations.",
 
   highlights: [
-    "Developed a location-based mobile application with Google Maps integration and real-time map interaction",
-    "Implemented intelligent marker clustering to efficiently display large numbers of locations while maintaining performance",
-    "Designed custom map markers, interactive location cards, and smooth zoom-to-cluster navigation",
-    "Built scalable architecture for future integration with backend services, user-generated content, and location management"
+    "Developed an interactive map-based mobile application for professional drivers using React Native, Expo, TypeScript, Google Maps, and React Native Maps",
+
+    "Implemented intelligent POI clustering to efficiently display multiple locations while maintaining a clean and responsive map experience",
+
+    "Integrated Google Routes API to calculate real road distances and travel times between points of interest instead of relying on straight-line geographical distances",
+
+    "Built a road-distance matrix system capable of evaluating routes between multiple POIs using real road infrastructure",
+
+    "Implemented route optimization using a TSP-based algorithm to determine an optimized order for visiting multiple points of interest",
+
+    "Added an interactive optimized-route panel displaying the calculated POI sequence and total road distance",
+
+    "Designed reusable map components, interactive markers, cluster navigation, location cards, and modular TypeScript architecture",
+
+    "Refactored the application into reusable components, hooks, algorithms, services, utilities, and data modules to improve scalability and maintainability"
   ],
 
   tech: [
@@ -35,7 +47,10 @@ const projectData: Project[] = [
     "Expo",
     "TypeScript",
     "Google Maps",
-    "React Native Maps"
+    "Google Routes API",
+    "React Native Maps",
+    "TSP Route Optimization",
+    "Map Clustering"
   ],
 
   
