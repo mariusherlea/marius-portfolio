@@ -11,13 +11,16 @@ const Header = () => {
   const [header, setHeader] = useState(false);
   const pathname = usePathname();
   useEffect(() => {
-    const scrollYPos = window.addEventListener("scroll", () => {
-      window.scrollY > 50 ? setHeader(true) : setHeader(false);
-    });
-    return () => {
-      window.removeEventListener("scroll", scrollYPos);
-    };
-  }, []);
+  const handleScroll = () => {
+    setHeader(window.scrollY > 50);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
   return (
     <header
       className={`${
@@ -33,7 +36,7 @@ const Header = () => {
             {/*nav */}
             <Nav
               containerStyles="hidden xl:flex gap-x-8 items-center"
-              linkStyles="relative hoover:text-primary transition-all"
+              linkStyles="relative hover:text-primary transition-all"
               underLineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
             />
             <ThemeToggler />

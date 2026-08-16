@@ -3,6 +3,7 @@
 A modern personal portfolio showcasing full-stack projects built with Next.js, React, TypeScript, and practical backend integrations.
 
 **Live website:** [mariusherlea.dev](https://www.mariusherlea.dev)
+
 ## Screenshots
 ![Homepage screenshot](./public/screenshots/homepage.png)
 
