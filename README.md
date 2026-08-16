@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marius Herlea — Developer Portfolio
 
-## Getting Started
+A modern personal portfolio showcasing full-stack projects built with Next.js, React, TypeScript, and practical backend integrations.
 
-First, run the development server:
+**Live website:** [mariusherlea.dev](https://www.mariusherlea.dev)
+
+![Homepage screenshot](./public/screenshots/homepage.png)
+
+## About
+
+I’m a Full-Stack Developer focused on building clean, responsive, production-oriented web applications.
+
+This portfolio presents projects involving SaaS dashboards, eCommerce experiences, content platforms, payment integrations, mapping, and route optimization.
+
+## Featured Projects
+
+### TruckMate — Smart Navigation & Route Optimization
+
+A cross-platform mobile application designed for professional truck drivers.
+
+- Interactive map with parking, fuel stations, restaurants, showers, and service locations
+- POI clustering for a clean map experience
+- Real road distance and travel-time calculations with Google Routes API
+- Multi-stop route optimization using a TSP-based approach
+- Modular architecture with reusable components, hooks, services, utilities, and algorithms
+
+**Built with:** React Native, Expo, TypeScript, Google Maps, React Native Maps, Google Routes API
+
+[View source code](https://github.com/mariusherlea/poi-map-mobile-sdk53)
+
+### StorePulse — eCommerce Analytics SaaS
+
+A production-style analytics dashboard for tracking eCommerce performance, revenue, and customer activity.
+
+- Dashboard-oriented UI for sales and performance data
+- Reusable components and scalable frontend structure
+- Designed for dynamic and real-time data workflows
+
+**Built with:** Next.js, TypeScript, PostgreSQL, Prisma, Auth.js, Tailwind CSS, Recharts
+
+[Live demo](https://candid-pie-22ddca.netlify.app/) · [View source code](https://github.com/mariusherlea/ecommerce-analytics-saas)
+
+### Full-Stack eCommerce Platform
+
+A modern eCommerce application with product pages, shopping cart, checkout flow, and Stripe payments.
+
+**Built with:** Next.js, TypeScript, Strapi, Stripe, Tailwind CSS
+
+[Live demo](https://ecommerce-frontend-otpz.vercel.app/) · [View source code](https://github.com/mariusherlea/ecommerce-frontend)
+
+### Blog Platform with SEO & CMS
+
+A content-driven blog platform with dynamic routing, comments, pagination, and CMS integration.
+
+**Built with:** Next.js, TypeScript, Strapi, REST API
+
+[View source code](https://github.com/mariusherlea/my-blog-frontend)
+
+![Projects page screenshot](./public/screenshots/projects.png)
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Radix UI
+- React Hook Form
+- Formspree
+
+## Features
+
+- Responsive layout for desktop and mobile
+- Light and dark theme support
+- Animated page transitions and UI elements
+- Project filtering and carousel
+- SEO metadata, Open Graph tags, sitemap, and canonical URL
+- Contact form integration
+
+## Run Locally
 
 ```bash
+git clone https://github.com/mariusherlea/marius-portfolio.git
+cd marius-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Website: [mariusherlea.dev](https://www.mariusherlea.dev)
+- LinkedIn: [linkedin.com/in/mariusherlea](https://www.linkedin.com/in/mariusherlea/)
+- Email: [contact@mariusherlea.dev](mailto:contact@mariusherlea.dev)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Built and maintained by Marius Herlea.
