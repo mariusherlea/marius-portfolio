@@ -59,23 +59,33 @@ const projectData: Project[] = [
  {
   image: "/work/storepulse.png",
   category: "SaaS",
-  name: "StorePulse — eCommerce Analytics SaaS",
-  description:
-    "A production-style full-stack SaaS dashboard for tracking eCommerce performance, revenue, and customer activity.",
-  highlights: [
-    "Built a SaaS-style analytics dashboard for tracking sales, performance, and user behavior",
-    "Designed scalable UI for handling dynamic data and real-time updates",
-    "Focused on clean architecture, reusable components, and performance optimization"
-  ],
-  tech: [
-    "Next.js",
-    "TypeScript",
-    "PostgreSQL",
-    "Prisma",
-    "Auth.js",
-    "Tailwind CSS",
-    "Recharts"
-  ],
+ 
+
+name: "StorePulse — eCommerce Analytics & Forecasting SaaS",
+
+description:
+  "A production-style full-stack SaaS platform for eCommerce analytics, revenue intelligence, trend analysis, and data-driven forecasting.",
+
+highlights: [
+  "Built a full-stack SaaS analytics platform for tracking revenue, orders, customers, and average order value",
+  "Implemented quantitative revenue analysis using historical sales data and trend detection",
+  "Developed a 30-day revenue forecasting engine based on linear regression",
+  "Added data-driven growth analysis and forecast projections for eCommerce performance",
+  "Designed scalable dashboard architecture with reusable components and dynamic analytics",
+  "Implemented authentication, PostgreSQL data persistence, and Prisma ORM",
+],
+
+tech: [
+  "Next.js",
+  "TypeScript",
+  "PostgreSQL",
+  "Prisma",
+  "Auth.js",
+  "Tailwind CSS",
+  "Recharts",
+  "Linear Regression",
+  "Quantitative Analytics",
+],
   live: "https://candid-pie-22ddca.netlify.app/",
   github: "https://github.com/mariusherlea/ecommerce-analytics-saas"
 },
