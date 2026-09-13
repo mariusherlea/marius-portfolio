@@ -12,10 +12,6 @@ const outfit = Outfit({
 export const metadata = {
   metadataBase: new URL("https://www.mariusherlea.dev"),
 
-  alternates: {
-    canonical: "/",
-  },
-
   title: {
     default: "Marius Herlea | Full Stack Developer",
     template: "%s | Marius Herlea",

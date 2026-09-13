@@ -1,3 +1,4 @@
+//app/resume/page.jsx
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Github, Linkedin } from "lucide-react";
@@ -6,7 +7,9 @@ export const metadata = {
   title: "Resume | Marius Herlea",
   description:
     "Resume of Marius Herlea, Full-Stack & Mobile Developer specializing in React, Next.js, React Native, TypeScript, PostgreSQL, Strapi, Prisma, and modern web technologies.",
-};
+ alternates: {
+    canonical: "/resume",
+  },};
 
 const ResumePage = () => {
   return (
