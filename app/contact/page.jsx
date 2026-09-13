@@ -1,5 +1,17 @@
+//app/contact/page.jsx
 import Form from "@/components/Form";
 import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
+
+export const metadata = {
+  title: "Contact | Marius Herlea",
+  description:
+    "Get in touch with Marius Herlea for Full-Stack development, web applications, mobile applications, and freelance or full-time opportunities.",
+
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 const Contact = () => {
   return (
     <section>
