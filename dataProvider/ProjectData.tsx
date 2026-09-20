@@ -57,38 +57,41 @@ const projectData: Project[] = [
   github: "https://github.com/mariusherlea/poi-map-mobile-sdk53"
 },
  {
-  image: "/work/storepulse.png",
-  category: "SaaS",
- 
+image: "/work/storepulse.png",
+category: "SaaS",
 
 name: "StorePulse — eCommerce Analytics & Forecasting SaaS",
 
 description:
-  "A production-style full-stack SaaS platform for eCommerce analytics, revenue intelligence, trend analysis, and data-driven forecasting.",
+"A full-stack eCommerce analytics SaaS platform that turns PostgreSQL store data into actionable insights across revenue, orders, customers, products, inventory, and 30-day revenue forecasting.",
 
 highlights: [
-  "Built a full-stack SaaS analytics platform for tracking revenue, orders, customers, and average order value",
-  "Implemented quantitative revenue analysis using historical sales data and trend detection",
-  "Developed a 30-day revenue forecasting engine based on linear regression",
-  "Added data-driven growth analysis and forecast projections for eCommerce performance",
-  "Designed scalable dashboard architecture with reusable components and dynamic analytics",
-  "Implemented authentication, PostgreSQL data persistence, and Prisma ORM",
+"Built a production-style full-stack SaaS platform for monitoring revenue, orders, customers, products, inventory, and average order value",
+"Developed database-driven analytics using PostgreSQL and Prisma, with store-based data isolation and relational product/order data",
+"Implemented dedicated product analytics pages with revenue, units sold, order performance, inventory, sales trends, and store revenue contribution",
+"Built a 30-day revenue forecasting engine using linear regression and interactive forecast visualization",
+"Implemented historical performance and trend analysis to surface business insights from real eCommerce data",
+"Designed a scalable dashboard architecture using Next.js App Router, Server Components, Route Handlers, and reusable analytics services",
+"Implemented secure email/password authentication with Auth.js, protected routes, JWT-based sessions, and typed database access"
 ],
 
 tech: [
-  "Next.js",
-  "TypeScript",
-  "PostgreSQL",
-  "Prisma",
-  "Auth.js",
-  "Tailwind CSS",
-  "Recharts",
-  "Linear Regression",
-  "Quantitative Analytics",
+"Next.js 16",
+"React 19",
+"TypeScript",
+"PostgreSQL",
+"Prisma 7",
+"Auth.js",
+"Tailwind CSS",
+"Recharts",
+"Linear Regression",
+"eCommerce Analytics"
 ],
-  live: "https://candid-pie-22ddca.netlify.app/",
-  github: "https://github.com/mariusherlea/ecommerce-analytics-saas"
+
+live: "https://candid-pie-22ddca.netlify.app/",
+github: "https://github.com/mariusherlea/ecommerce-analytics-saas"
 },
+
   {
     image: "/work/ecom.png",
     category: "Full-Stack",
