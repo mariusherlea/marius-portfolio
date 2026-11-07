@@ -13,6 +13,14 @@ import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
+import { Special_Elite } from "next/font/google";
+
+const specialElite = Special_Elite({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
 const Hero = () => {
   return (
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
@@ -23,7 +31,15 @@ const Hero = () => {
             {/* <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div> */}
-            <h1 className="h1 mb-4">Marius Herlea</h1>
+            <h1
+  className={`${specialElite.className} h1 mb-4 tracking-wide`}
+  style={{
+    color: "#8CC63F",
+    textShadow: "0 0 5px rgba(140, 198, 63, 0.45), 0 0 12px rgba(140, 198, 63, 0.2)",
+  }}
+>
+  Marius Herlea
+</h1>
           <p className="subtitle max-w-[520px] mx-auto xl:mx-0 mb-4">
   Full-Stack Developer building modern SaaS, eCommerce, and content platforms with Next.js and TypeScript.
 </p><p>
